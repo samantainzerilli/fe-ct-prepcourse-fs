@@ -1,0 +1,40 @@
+// FUNCIÓN CONSTRUCTORA
+function Auto(puertas, color, marca, año, ruedas) {
+    this.puertas = puertas;
+    this.color = color;
+    this.marca = marca;
+    this.año = año;
+    this.ruedas = ruedas;
+ }
+ let miPrimerAuto = new Auto(2, 'Rojo', 'Ferrari', 2018, 4);
+ console.log(miPrimerAuto);
+ console.log(miPrimerAuto.marca);
+
+ // EXPRESIÓN DE CLASE
+class Auto {
+    constructor(puertas, color, marca, año, ruedas) {
+       this.puertas = puertas;
+       this.color = color;
+       this.marca = marca;
+       this.año = año;
+       this.ruedas = ruedas;
+    }
+ }
+ let miSegundoAuto = new Auto(4, 'Blanco', 'Fiat', 2015, 4);
+ console.log(miSegundoAuto);
+ console.log(miSegundoAuto.marca);
+
+
+ class futbol{
+    constructor(jugador){
+        this.jugador=jugador;
+    }
+    obtenerNombre(){
+        console.log(this.jugador);
+    }
+ }
+ var argentina= new futbol('Messi');
+ var brasil= new futbol('Pele');
+
+ argentina.obtenerNombre();
+ brasil.obtenerNombre();
